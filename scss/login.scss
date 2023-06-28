@@ -1,0 +1,187 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url("../img/login_bg_img.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.login-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & span:nth-child(1) {
+        width: 384px;
+        height: 35.61px;
+        text-align: center;
+        font-size: 32px;
+        font-family: '微软雅黑';
+        color: #ffffff;
+    }
+
+    & span:nth-child(2) {
+        width: 370.99px;
+        height: 15.58px;
+        margin-top: 17px;
+        text-align: center;
+        font-family: '微软雅黑';
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+.login-main {
+    width: 500px;
+    height: 540px;
+    background: url("../img/login-3.png");
+    margin-top: 38px;
+}
+
+.login-content-box {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.login-main-header {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+
+    div {
+        color: rgb(79, 131, 255);
+    }
+
+    & div:nth-child(2) {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    & div:nth-child(3) {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+.login-input {
+    margin-top: 50px;
+
+    input {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(29, 42, 75);
+        border: 1px solid rgb(79, 131, 255);
+    }
+
+    .login-zh {
+        position: relative;
+
+        input {
+            text-indent: 50px;
+        }
+
+        div::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: url("../img/login_sprites.png") -50px -10px;
+        }
+    }
+
+    .login-password {
+        position: relative;
+        margin-top: 25px;
+
+        input {
+            text-indent: 50px;
+        }
+
+        div::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: url("../img/login_sprites.png") -10px -10px;
+        }
+    }
+
+    .login-code {
+        margin-top: 25px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            text-indent: 50px;
+            width: 240px;
+        }
+
+        .code-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: url("../img/login_sprites.png") -88px -10px;
+        }
+
+        .code {
+            width: 110px;
+            height: 50px;
+            border-radius: 4px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .outlogin {
+        margin-top: 25px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: rgb(79, 131, 255);
+        color: #ffffff;
+        font-family: "微软雅黑";
+        font-size: 16px;
+        //cursor: pointer;
+        a{
+            color: #ffffff;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .outlogin:hover {
+        background-color: rgb(18, 85, 236);
+        a{
+            color: #dedddd;
+        }
+    }
+}

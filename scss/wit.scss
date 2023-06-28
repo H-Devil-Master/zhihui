@@ -1,0 +1,318 @@
+$admin-path: '../img/admin-sprites.png';
+$list-path: '../img/list-sprites.png';
+body {
+    background: url("../img/bg_img.png") center;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box {
+        width: 1440px;
+        margin: 0 auto;
+        min-height: 800px;
+        padding-top: 36px;
+        //background: red;
+        .header-box {
+            display: flex;
+            justify-content: space-between;
+            .header-txt {
+                margin-left: 60px;
+                span {
+                    width: 399px;
+                    height: 40px;
+                    font-size: 40px;
+                    font-family: Microsoft YaHei;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                }
+            }
+
+            .header-admin {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                margin-right: 60px;
+                position: relative;
+                padding-bottom: 6px;
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    min-width: 100px;
+                    z-index: 1;
+                    width: 140px;
+                    height: 184px;
+                    background: #FFFFFF;
+                    box-shadow: 0 5px 15px 0 rgba(17, 21, 85, 0.25);
+                    border-radius: 4px;
+                    top: 50px;
+                    left: 0;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: black;
+                        margin-top: 7px;
+
+                        span {
+                            width: 56px;
+                            height: 12px;
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #222630;
+                            line-height: 36px;
+                            padding-left: 12px;
+                        }
+
+                        .info_icon {
+                            width: 14px;
+                            height: 14px;
+                            background: url($admin-path) -10px -44px;
+                            margin-left: 18px;
+                        }
+
+                        .password-icon {
+                            width: 14px;
+                            height: 14px;
+                            background: url($admin-path) -44px -44px;
+                            margin-left: 18px;
+                        }
+
+                        .address_icon {
+                            width: 14px;
+                            height: 14px;
+                            background: url($admin-path) -10px -10px;
+                            margin-left: 18px;
+                        }
+
+                        .exit_icon {
+                            width: 14px;
+                            height: 14px;
+                            background: url($admin-path) -44px -10px;
+                            margin-left: 18px;
+                        }
+                    }
+                }
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .dropdown-content::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 30px;
+                    transform: translateY(-50%);
+                    border-width: 0 10px 10px 10px; // 小三角形的大小和样式
+                    border-style: solid;
+                    border-color: #ffffff transparent;
+                }
+                .header-head {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    margin-right: 14px;
+                }
+
+                .header-z {
+                    span {
+                        width: 57px;
+                        height: 13px;
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #A3A9BD;
+                        cursor: pointer;
+                    }
+
+                }
+
+
+                .header-dropdown {
+                    margin-top: 4px;
+                    margin-left: 7px;
+                }
+            }
+            .header-admin:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+        main {
+            //height: 810px;
+            min-height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box {
+            margin-top: 35px;
+            width: 1380px;
+            background: rgba(255, 255, 255, .06);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .main-content-box {
+                padding: 0 0 30px 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .main-content:hover .main-box-icon .normal_icon {
+                    background-image: url("../img/white_sprites.png");
+                }
+                .main-content {
+                    width: 240px;
+                    height: 150px;
+                    margin: 30px 0 0 30px;
+                    background-color: #FFFFFF;
+                    transition: background-color 0.2s linear; /* 过渡效果 */
+                    border-radius: 8px;
+
+                    .main-box-icon {
+                        display: flex;
+                        margin-top: 27px;
+                        margin-left: 52px;
+
+                        div {
+                            width: 36px;
+                            height: 36px;
+                        }
+
+                        .normal_icon {
+                            background: url("../img/list_sprites.png") -10px -10px;
+                            margin-left: 50px;
+                        }
+
+                        .icon_1 {
+                            background-position: -10px -10px;
+                        }
+
+                        .icon_2 {
+                            background-position: -10px -66px;
+                        }
+
+                        .icon_3 {
+                            background-position: -10px -122px;
+                        }
+
+                        .icon_4 {
+                            background-position: -10px -178px;
+                        }
+
+                        .icon_5 {
+                            background-position: -10px -234px;
+                        }
+
+                        .icon_6 {
+                            background-position: -10px -290px;
+                        }
+
+                        .icon_7 {
+                            background-position: -10px -346px;
+                        }
+
+                        .icon_8 {
+                            background-position: -10px -402px;
+                        }
+
+                        .icon_9 {
+                            background-position: -10px -458px;
+                        }
+
+                        .icon_10 {
+                            background-position: -10px -514px;
+                        }
+
+                        .icon_11 {
+                            background-position: -10px -570px;
+                        }
+
+                        .icon_12 {
+                            background-position: -10px -626px;
+                        }
+
+                        .icon_13 {
+                            background-position: -10px -682px;
+                        }
+
+                        .icon_14 {
+                            background-position: -10px -738px;
+                        }
+
+                        .icon_15 {
+                            background-position: -10px -794px;
+                        }
+
+                        .icon_16 {
+                            background-position: -10px -850px;
+                        }
+
+                        .icon_17 {
+                            background-position: -10px -906px;
+                        }
+
+                        .icon_18 {
+                            background-position: -10px -962px;
+                        }
+
+                        .icon_19 {
+                            background-position: -10px -1018px;
+                        }
+                    }
+
+                    .main-icon-txt {
+                        width: 100%;
+                        margin-top: 11px;
+                        height: 16px;
+                        font-size: 16px;
+                        font-family: Microsoft YaHei;
+                        font-weight: bold;
+                        color: #222630;
+                        text-align: center;
+                    }
+
+                    .main-icon-floor {
+                        width: 100%;
+                        margin-top: 9px;
+                        text-align: center;
+                        height: 12px;
+                        font-size: 12px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #959BA9;
+                    }
+                }
+
+                .main-content.hover {
+                    background-color: #386DEB;
+                }
+
+                .main-content:hover .main-icon-txt {
+                    color: #ffffff;
+                }
+                .main-content:hover .main-icon-floor{
+                    color: rgba(255,255,255,0.9);
+                }
+            }
+        }
+
+        .footer-txt {
+            margin: 28px auto;
+            width: 346px;
+            height: 11px;
+            font-size: 12px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+    }
+}

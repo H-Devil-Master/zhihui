@@ -1,0 +1,39 @@
+@charset "UTF-8";
+html { width: 100%; height: 100%; }
+
+body { width: 100%; height: 100%; background: url("../img/login_bg_img.png"); display: flex; justify-content: center; align-items: center; }
+
+.box { width: 500px; height: 600px; position: relative; }
+
+.login-header { width: 100%; display: flex; align-items: center; flex-direction: column; }
+.login-header span:nth-child(1) { width: 384px; height: 35.61px; text-align: center; font-size: 32px; font-family: '微软雅黑'; color: #ffffff; }
+.login-header span:nth-child(2) { width: 370.99px; height: 15.58px; margin-top: 17px; text-align: center; font-family: '微软雅黑'; font-size: 14px; color: #ffffff; }
+
+.login-main { width: 500px; height: 540px; background: url("../img/login-3.png"); margin-top: 38px; }
+
+.login-content-box { width: 360px; margin: 0 auto; }
+
+.login-main-header { display: flex; align-items: center; padding-top: 80px; }
+.login-main-header div { color: #4f83ff; }
+.login-main-header div:nth-child(2) { font-size: 20px; font-weight: bold; margin-left: 10px; }
+.login-main-header div:nth-child(3) { font-size: 18px; margin-left: 10px; }
+
+.login-input { margin-top: 50px; }
+.login-input input { width: 100%; height: 50px; background-color: #1d2a4b; border: 1px solid #4f83ff; }
+.login-input .login-zh { position: relative; }
+.login-input .login-zh input { text-indent: 50px; }
+.login-input .login-zh div::before { content: ""; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 20px; height: 20px; background: url("../img/login_sprites.png") -50px -10px; }
+.login-input .login-password { position: relative; margin-top: 25px; }
+.login-input .login-password input { text-indent: 50px; }
+.login-input .login-password div::before { content: ""; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 20px; height: 20px; background: url("../img/login_sprites.png") -10px -10px; }
+.login-input .login-code { margin-top: 25px; position: relative; display: flex; justify-content: space-between; }
+.login-input .login-code input { text-indent: 50px; width: 240px; }
+.login-input .login-code .code-icon::before { content: ""; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 20px; height: 20px; background: url("../img/login_sprites.png") -88px -10px; }
+.login-input .login-code .code { width: 110px; height: 50px; border-radius: 4px; }
+.login-input .login-code .code img { width: 100%; }
+.login-input .outlogin { margin-top: 25px; width: 100%; height: 50px; line-height: 50px; text-align: center; background-color: #4f83ff; color: #ffffff; font-family: "微软雅黑"; font-size: 16px; }
+.login-input .outlogin a { color: #ffffff; width: 100%; display: block; text-align: center; }
+.login-input .outlogin:hover { background-color: #1255ec; }
+.login-input .outlogin:hover a { color: #dedddd; }
+
+/*# sourceMappingURL=login.css.map */
